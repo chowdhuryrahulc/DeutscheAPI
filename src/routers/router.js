@@ -11,7 +11,7 @@ router.post('/vocab', async (req, res) => {
         res.status(400).send(error);
     } 
 })
-
+   
 router.get('/vocab', async (req, res) => { 
     try {
         const getAllVocabData = await VocabCardModel.find({});
